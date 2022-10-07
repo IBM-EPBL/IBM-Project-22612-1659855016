@@ -7,10 +7,3 @@ CREATE TABLE users (
     name TEXT NOT NULL,
     email TEXT NOT NULL
 );
-
-INSERT INTO users (username, password, name, email) VALUES (
-    "atp",
-    "mito@123",
-    "mito",
-    "anime@gmx.de"
-);
