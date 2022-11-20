@@ -22,6 +22,19 @@
         <script src="https://cdn.jsdelivr.net/npm/jquery-scroll-lock@3.1.3/jquery-scrollLock.min.js" integrity="sha256-OGBqkSG4kYQ0UbrT7juDZpE/VqIjMPuu6CVKQ1KaTEA=" crossorigin="anonymous"></script>
 		<script src="{% static 'js/Chart.extension.js' %}"></script>
 		<script src="{% static 'js/argon.min.js?v=1.2.0' %}"></script>
+        <script>
+            window.watsonAssistantChatOptions = {
+              integrationID: "bd666c1d-f9d3-4a35-87bb-9919e699497e", // The ID of this integration.
+              region: "jp-tok", // The region your integration is hosted in.
+              serviceInstanceID: "0810474f-dfd4-4ecc-9f97-7b535e9cbefb", // The ID of your service instance.
+              onLoad: function(instance) { instance.render(); }
+            };
+            setTimeout(function(){
+              const t=document.createElement('script');
+              t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+              document.head.appendChild(t);
+            });
+          </script>
     </body>
     <form action="{% url 'logout' %}" id = "formnew" method="POST">{% csrf_token %}</form>
 </html>
