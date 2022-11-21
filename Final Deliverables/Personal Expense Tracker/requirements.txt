@@ -1,0 +1,12 @@
+django
+ibm-db
+python-dotenv
+cloudinary
+django-cloudinary-storage
+django-user-agents
+xlwt
+weasyprint
+pandas
+pyexcel-xls
+pyexcel-xlsx
+django[argon2]

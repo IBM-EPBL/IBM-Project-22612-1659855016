@@ -12,9 +12,8 @@ distlib==0.3.4
 dj-database-url==0.5.0
 Django==2.0
 filelock==3.4.0
-Flask==2.2.2
 ibm-db==3.0.1
-ibm-db-django==1.2.0.0
+ibm-db-django==1.2.0.0a0
 importlib-metadata==4.10.0
 itsdangerous==2.1.2
 Jinja2==3.1.2
