@@ -3,7 +3,7 @@ import ibm_db
 
 app = Flask(__name__)
 app.secret_key = "aiuhe72texy8SASAo2qDHKXsfsfZNkeyuxU2WOXo"
-conn = ibm_db.connect("DATABASE=bludb;HOSTNAME=ba99a9e6-d59e-4883-8fc0-d6a8c9f7a08f.c1ogj3sd0tgtu0lqde00.databases.appdomain.cloud;PORT=31321;SECURITY=SSL;SSLServerCertificate=DigiCertGlobalRootCA.crt;UID=fbm40876;PWD=3M8QIjLHz4KNYIYN", '', '')
+conn = ibm_db.connect("DATABASE=Db2-hf;HOSTNAME=ba99a9e6-d59e-4883-8fc0-d6a8c9f7a08f.c1ogj3sd0tgtu0lqde00.databases.appdomain.cloud;PORT=31321;PROTOCOL=TCPIP;SECURITY=SSL;SSLServerCertificate=DigiCertGlobalRootCA.crt;UID=fbm40876;PWD=3M8QIjLHz4KNYIYN;", '', '')
 sql = "CREATE TABLE IF NOT EXISTS Users (Email varchar(50),Rollno int,Username varchar(50),Password varchar(50))"
 stmt = ibm_db.prepare(conn, sql)
 ibm_db.execute(stmt)
